@@ -42,10 +42,21 @@
   color: blue;
   margin-left: 0%;
 }
-.bottomtext{
+.bottomtext {
   margin-left: 0;
 }
 hr {
-    width: 600px;
-    border-top: 3.5px solid black;
-  }
+  width: 600px;
+  border-top: 3.5px solid black;
+}
+@media screen and (max-width: 730px) {
+ .text{
+  position:static;
+ }
+ hr {
+  width: 300px;
+}
+/* .center {
+  min-height: 100vw;
+} */
+}

@@ -1,6 +1,9 @@
 .App {
   text-align: center;
   min-height: 100vh;
+  color: white;
+  background-color: gainsboro;
+  display: flex;
 }
 
 .App-logo {
@@ -13,14 +16,9 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-.header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  background-color: gainsboro;
-}
+/* .header {
+  
+} */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -42,5 +40,10 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 730px) {
+  .App {
+    flex-direction: column;
   }
 }

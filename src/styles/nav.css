@@ -14,7 +14,6 @@
 }
 .sidebar.active {
   min-height: 98.5vh;
-  align-items: flex-start;
   width: 240px;
   background: rgba(0, 0, 0, 0.35);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -29,6 +28,7 @@
 }
 .toggle-btn {
   position: absolute;
+  z-index: 1;
   color: #fff;
   margin-top: 60px;
   margin-left: 75px;
@@ -36,7 +36,7 @@
   height: 30px;
   width: 30px;
   text-align: center;
-  line-height: 28px;
+  line-height: 30px;
   transform: translateX(-50%);
   background-color: blue;
   border-radius: 105px;
@@ -50,7 +50,7 @@
 }
 .menu {
   position: absolute;
-  top: 130px;
+  margin-top: 120px;
 }
 .sidebar.active .menu-icon {
   width: 210px;
@@ -124,131 +124,27 @@ a:hover .menu-name{
 .mail:hover {
   color: red;
 }
-@media screen and (max-width: 730px){
-  .sidebar {
-    width: 100%;
-    margin: 0;
-    border-radius: 13px;
-    border: 2px solid yellow;
-    max-height: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: row;
-    background: gray;
-    border: 1.5px solid rgb(94, 91, 91);
-    transition: all 0.4s ease-out;
-  }
-  .sidebar.active {
-    min-height: 10px;
-    align-items: flex-start;
-    width: 240px;
-    background: rgba(0, 0, 0, 0.35);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border-radius: 10px;
-  }
-  .logo {
-    font-size: 45px;
-    padding-top: 15px;
-    padding-left: 15px;
-  }
-  .toggle-btn {
-    position: relative;
-    color: #fff;
-    margin-top: 0;
-    margin-left: 0;
-    font-size: 22px;
-    height: 30px;
-    width: 30px;
-    text-align: center;
-    line-height: 0;
-    transform: translateX(-50%);
-    background-color: blue;
-    border-radius: 105px;
-    transition: all 0.4s ease-out;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 1.2);
-    border: 0.7px solid darkblue;
-  }
-  .toggle-btn.active {
-    transform: rotate(180deg);
-    margin-left: 225px;
-  }
-  .menu {
-    position: relative;
-    top: 0;
-  }
-  .sidebar.active .menu-icon {
-    width: 210px;
-    border-radius: 10px;
-  }
-  .menu-icon {
-    width: 50px;
-    transition: all 0.4s ease;
-    font-size: 25px;
-    font-weight: 400;
-    color: black;
-    background: white;
-    margin-top: 5px;
-    margin-left: 13px;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-  }
-  .sidebar a{
-    text-decoration: none;
-    color: white;
-  }
-  a:hover .menu-name{
-    color: black;
-  }
-  .menu-icon2 {
-    width: 50px;
-    font-size: 25px;
-    font-weight: 400;
-    margin-top: 7px;
-    border-radius: 12px;
-    margin-left: 13px;
-    display: flex;
-    align-items: center;
-  }
-  .menu-icon2:hover{
-    background: #ffffff;
-    color: black;
-  }
-  .sidebar.active .menu-icon2 {
-    width: 210px;
-    border-radius: 10px;
-  }
-  .contact {
-    margin-bottom: 12px;
-  }
-  .menu-icon2 i {
-    padding: 12px;
-  }
-  .menu-icon i {
-    padding: 12px;
-  }
-  .menu-name {
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 20px;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease-in-out;
-  }
-  .sidebar.active .menu-name {
-    opacity: 1;
-    pointer-events: auto;
-  }
-  .lin:hover {
-    color: blue;
-  }
-  .insta:hover {
-    color: deeppink;
-  }
-  .mail:hover {
-    color: red;
-  }
+.navbar{
+  /* height: 65px; */
+  border-radius: 10px;
+  /* display: flex; */
+  justify-content: space-around;
+  background: rgba(0, 0, 0, 0.26);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  position: fixed;
 }
+.r_logo{
+  font-size: 45px;
+  padding-top: 1px;
+  padding-left: 15px;
+}
+.r_toggle-btn{
+
+}
+/* @media screen and (max-width: 730px){
+  .toggle-btn {
+    line-height: 30px;
+  }
+} */

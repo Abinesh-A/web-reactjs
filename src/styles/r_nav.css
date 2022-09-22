@@ -1,0 +1,145 @@
+.sidebar {
+  height: 60px;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.849);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.6px);
+  -webkit-backdrop-filter: blur(2.6px);
+  border: 1px solid rgba(0, 0, 0, 0.43);
+  /* border-top-left-radius: 0;
+  border-top-right-radius: 0; */
+  transition: all 0.4s ease-out;
+  align-items: flex-start;
+  position: absolute;
+}
+.sidebar.active {
+  height: 300px;
+  /* min-height: 30vh; */
+
+  /* position: absolute; */
+}
+.logo {
+  font-size: 45px;
+  color: white;
+  position: fixed;
+  /* padding-top: 15px;
+    padding-left: 15px; */
+}
+.toggle-btn {
+  z-index: 1;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    /* color: #fff;
+    margin-top: 80vh;
+    margin-left: 90vw; */
+    font-size: 22px;
+    height: 30px;
+    width: 30px;
+    /* text-align: center; */
+    line-height: 28px;
+    /* transform: translateX(-50%); */
+    background-color: blue;
+    border-radius: 105px;
+    /* transition: all 0.4s ease-out; */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1.2);
+    border: 0.7px solid darkblue;
+}
+.toggle-btn.active {
+  /* margin-left: 160px; */
+  /* margin-top: 5%; */
+}
+.menu {
+    display: none;
+    position: absolute;
+    top: 130px;
+}
+.sidebar.active .menu{
+    display: none;
+}
+.sidebar.active .menu-icon {
+    /* display: block; */
+  width: 210px;
+    border-radius: 10px;
+}
+.menu-icon {
+  width: 50px;
+    transition: all 0.4s ease;
+    font-size: 25px;
+    font-weight: 400;
+    color: black;
+    background: white;
+    margin-top: 5px;
+    margin-left: 13px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+}
+.sidebar a {
+  text-decoration: none;
+  color: white;
+}
+a:hover .menu-name {
+  color: black;
+}
+.menu-icon2 {
+  display: block;
+  /* width: 50px;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 7px;
+    border-radius: 12px;
+    margin-left: 13px;
+    display: flex;
+    align-items: center; */
+}
+.menu-icon2:hover {
+  background: #ffffff;
+  color: black;
+}
+.sidebar.active .menu-icon2 {
+  /* width: 210px;
+    border-radius: 10px; */
+}
+.contact {
+  margin-bottom: 12px;
+  display: none;
+}
+.menu-icon2 i {
+  padding: 12px;
+}
+.menu-icon i {
+  padding: 12px;
+}
+.menu-name {
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 20px;
+  opacity: 1;
+  display: none;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+.sidebar.active .menu-name {
+  opacity: 1;
+  pointer-events: auto;
+}
+.lin:hover {
+  color: blue;
+}
+.insta:hover {
+  color: deeppink;
+}
+.mail:hover {
+  color: red;
+}
+@media screen and (max-width: 730px) {
+  .toggle-btn {
+    line-height: 33px;
+  }
+}
