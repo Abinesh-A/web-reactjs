@@ -4,8 +4,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* font-size: calc(10px + 2vmin); */
   color: black;
+  margin-left: 20px;
+  border: 1px solid;
 }
 .des {
   background: -webkit-linear-gradient(bottom right, rgb(179, 178, 178), #222);
@@ -13,11 +14,12 @@
   -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 11vw;
+  font-size: 13vw;
   font-weight: 900;
   pointer-events: none;
   user-select: none;
   transition: all 0.5s ease;
+  margin-bottom: 10%;
 }
 .ign {
   background: -webkit-linear-gradient(bottom left, rgb(179, 178, 178), #222);
@@ -25,25 +27,25 @@
   -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 11vw;
+  font-size: 13vw;
   font-weight: 900;
   pointer-events: none;
   user-select: none;
   transition: all 0.5s ease;
 }
 .text {
-  position: fixed;
-  left: 23%;
-  /* top: 46.5%; */
+  position: absolute;
+  left: 20%;
+  /* top: 41.2%; */
   font-size: 25px;
   color: black;
 }
 .toptext {
   color: blue;
-  margin-left: 0%;
+  margin-right: 40%;
 }
 .bottomtext {
-  margin-left: 0;
+  margin-right: 40%;
 }
 hr {
   width: 600px;
