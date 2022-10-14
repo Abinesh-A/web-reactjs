@@ -1,10 +1,10 @@
 import React from "react";
 import "../styles/page1.css";
 
-function Page1() {
+export const Page1 = () => {
   return (
     <>
-      <div className="d-flex justify-content-between align-items-center">
+      <div className="d-flex justify-content-between align-items-center page1div">
         <div className="center">
           <div className="design">
             <div className="des">
@@ -29,7 +29,6 @@ function Page1() {
         </div>
       </div>
     </>
-  );
+  )
 }
 
-export default Page1;

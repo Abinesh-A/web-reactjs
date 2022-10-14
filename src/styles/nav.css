@@ -11,6 +11,7 @@
   background: #11101d;
   border: 1.5px solid rgb(94, 91, 91);
   transition: all 0.4s ease-out;
+  position: fixed;
 }
 .sidebar.active {
   min-height: 98.5vh;
@@ -27,7 +28,7 @@
   padding-left: 13px;
 }
 .toggle-btn {
-  position: absolute;
+  position: fixed;
   z-index: 1;
   color: #fff;
   margin-top: 60px;

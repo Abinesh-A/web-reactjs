@@ -5,7 +5,9 @@
   background-color: gainsboro;
   display: flex;
 }
-
+.contentdiv{
+  margin-left: 7%;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

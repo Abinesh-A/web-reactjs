@@ -58,7 +58,10 @@ hr {
  hr {
   width: 300px;
 }
-/* .center {
-  min-height: 100vw;
-} */
+.center{
+  margin-left: 0;
+}
+.page1div{
+  flex-direction: column;
+}
 }
