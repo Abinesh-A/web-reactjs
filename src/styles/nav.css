@@ -23,9 +23,12 @@
   border-radius: 10px;
 }
 .logo {
-  font-size: 45px;
-  padding-top: 15px;
-  padding-left: 13px;
+  height: 80%;
+  width: 80%;
+  rotate: 180deg;
+  margin-top: 40%;
+  margin-left: 5%;
+  background-color: #11101d;
 }
 .toggle-btn {
   position: fixed;
