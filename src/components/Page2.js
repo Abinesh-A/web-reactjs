@@ -1,11 +1,13 @@
 import React from 'react'
-
+import "../styles/page2.css"
 export const Page2 = () => {
   return (
-    <h1>sfuhsudfsdfbsdkf
-        sfgsdfksdjfbsjdfbsdjf
-        sdfgusdygvsudvbjskhrfaw
-        fgularghalirugieki
-    </h1>
+    <div className='page2div'>
+      <h1>sfuhsudfsdfbsdkf
+          sfgsdfksdjfbsjdfbsdjf
+          sdfgusdygvsudvbjskhrfaw
+          fgularghalirugieki
+      </h1>
+    </div>
   )
 }

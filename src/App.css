@@ -4,6 +4,7 @@
   color: white;
   background-color: gainsboro;
   display: flex;
+  scroll-behavior: smooth;
 }
 .contentdiv{
   margin-left: 7%;
@@ -47,5 +48,8 @@
 @media screen and (max-width: 730px) {
   .App {
     flex-direction: column;
+  }
+  .contentdiv{
+    margin-left: 0;
   }
 }

@@ -1,7 +1,6 @@
-import React from 'react'
+import React from "react";
+import "../styles/page4.css";
 
 export const Page4 = () => {
-  return (
-    <div>page4</div>
-  )
-}
+  return <div className="page4div">page4</div>;
+};

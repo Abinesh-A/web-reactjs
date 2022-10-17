@@ -20,9 +20,7 @@ function App() {
           <Page4 />
         </div>
       </div>
-<div className="d-flex flex-column bg-primary">
-  hay
-</div>
+      <div className="d-flex flex-column bg-primary">hay</div>
       {/* <p>
           Edit <code>src/App.js</code> and save to reload.
         </p> */}

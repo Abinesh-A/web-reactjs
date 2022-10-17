@@ -146,8 +146,8 @@ a:hover .menu-name{
 .r_toggle-btn{
 
 }
-/* @media screen and (max-width: 730px){
-  .toggle-btn {
-    line-height: 30px;
+@media screen and (max-width: 730px){
+  .sidebar {
+    display: none;
   }
-} */
+}

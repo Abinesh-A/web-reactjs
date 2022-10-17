@@ -52,16 +52,16 @@ hr {
   border-top: 3.5px solid black;
 }
 @media screen and (max-width: 730px) {
- .text{
-  position:static;
- }
- hr {
-  width: 300px;
-}
-.center{
-  margin-left: 0;
-}
-.page1div{
-  flex-direction: column;
-}
+  .text {
+    position: static;
+  }
+  hr {
+    width: 300px;
+  }
+  .center {
+    margin-left: 0;
+  }
+  .page1div {
+    flex-direction: column;
+  }
 }
