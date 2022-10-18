@@ -6,7 +6,6 @@
   justify-content: center;
   color: black;
   margin-left: 20px;
-  border: 1px solid;
 }
 .des {
   background: -webkit-linear-gradient(bottom right, rgb(179, 178, 178), #222);
@@ -50,6 +49,10 @@
 hr {
   width: 600px;
   border-top: 3.5px solid black;
+}
+.imgs{
+  height: 400px;
+  width: 400px;
 }
 .intro {
   color: black;

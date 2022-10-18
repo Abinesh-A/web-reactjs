@@ -1,10 +1,14 @@
 import React from "react";
 import "../styles/page1.css";
+import test from "../components/test.png"
 
-export const Page1 = () => {
+export const Page1 = ({ home }) => {
   return (
     <>
-      <div className="d-flex justify-content-between align-items-center page1div">
+      <div
+        ref={home}
+        className="d-flex justify-content-between align-items-center page1div"
+      >
         <div className="center">
           <div className="design">
             <div className="des">
@@ -23,10 +27,9 @@ export const Page1 = () => {
           </div>
         </div>
         <div>
-          <div>
-            {/* <h1>HELLO,</h1><br />
-            <h1>I AM ABINESH</h1> */}
-            <div class="intro">
+          <div >
+            <img className="imgs" src={test}></img>
+            {/* <div class="intro">
               <div class="hello">
                 Hell<span id="o">o</span>,
               </div>
@@ -34,7 +37,7 @@ export const Page1 = () => {
                 <h1>I am MrABi</h1>
               </div>
               <button class="hire">B.E / ECE &#128526;</button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

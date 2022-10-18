@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 // import "../styles/nav.css";
 
-function Nav({gotoAbout,gotoWork}) {
+function Nav({ gotoHome, gotoAbout, gotoSkill, gotoProject }) {
   const [show, setShow] = useState(true);
   const [ismobile, setIsmobile] = useState(window.innerWidth < 730);
   useEffect(() => {
@@ -29,7 +29,7 @@ function Nav({gotoAbout,gotoWork}) {
         <i className="bx bx-chevron-right" id="btn"></i>
       </div>
       <div className={show ? "sidebar" : "sidebar active"}>
-        <div>
+        <div onClick={gotoHome}>
           <img
             className="logo"
             alt="logo"
@@ -39,14 +39,20 @@ function Nav({gotoAbout,gotoWork}) {
         <div className="menu">
           <div onClick={gotoAbout}>
             <div className="menu-icon">
-              <i className="bx bx-grid-alt"></i>
+              <i className="bx bx-notepad"></i>
               <span className="menu-name">ABOUT</span>
             </div>
           </div>
-          <div onClick={gotoWork}>
+          <div onClick={gotoSkill}>
             <div className="menu-icon">
-              <i className="bx bx-notepad"></i>
-              <span className="menu-name">WORK</span>
+              <i class="bx bx-bar-chart-alt-2"></i>
+              <span className="menu-name">SKILL</span>
+            </div>
+          </div>
+          <div onClick={gotoProject}>
+            <div className="menu-icon">
+            <i class='bx bx-category'></i>
+              <span className="menu-name">PROJECT</span>
             </div>
           </div>
         </div>

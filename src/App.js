@@ -7,26 +7,47 @@ import { Page3 } from "./components/Page3";
 import { Page4 } from "./components/Page4";
 
 function App() {
+  const home = useRef(null);
   const about = useRef(null);
-  const work = useRef(null);
-  const gotoAbout = () => {
-    window.scrollTo({ top: about.current.scrollIntoView({behavior: 'smooth'})});
+  const skill = useRef(null);
+  const project = useRef(null);
+  const gotoHome = () => {
+    window.scrollTo({
+      top: home.current.scrollIntoView({ behavior: "smooth" }),
+    });
   };
-  const gotoWork =()=>{
-    window.scrollTo({ top: work.current.scrollIntoView({behavior: 'smooth'})});
-  }
+  const gotoAbout = () => {
+    window.scrollTo({
+      top: about.current.scrollIntoView({ behavior: "smooth" }),
+    });
+  };
+  const gotoSkill = () => {
+    window.scrollTo({
+      top: skill.current.scrollIntoView({ behavior: "smooth" }),
+    });
+  };
+  const gotoProject = () => {
+    window.scrollTo({
+      top: project.current.scrollIntoView({ behavior: "smooth" }),
+    });
+  };
   return (
     <div className="App">
       {/* <header className="header"> */}
       <div className="navdiv">
-        <Nav gotoAbout={gotoAbout} gotoWork={gotoWork} />
+        <Nav
+          gotoHome={gotoHome}
+          gotoAbout={gotoAbout}
+          gotoSkill={gotoSkill}
+          gotoProject={gotoProject}
+        />
       </div>
       <div className="contentdiv">
         <div className="d-flex flex-column">
-          <Page1 />
-          <Page2 about={about}/>
-          <Page3 />
-          <Page4 work={work} />
+          <Page1 home={home} />
+          <Page2 about={about} />
+          <Page3 skill={skill} />
+          <Page4 project={project} />
         </div>
       </div>
       {/* <div className="d-flex flex-column bg-primary">hay</div> */}
