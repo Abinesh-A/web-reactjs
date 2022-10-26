@@ -1,9 +1,30 @@
 .page2div{
+    margin-top: -5.5%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+    color: black;
+    min-width: 90vw;
+}
+.aboutdiv{
+    padding: 4%;
+}
+.about_h{
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-size: 3rem;
+    background-color: rgb(113 75 159);
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 5px;
+    border-radius: 5px;
+}
+.about_t{
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1.1rem;
+    font-family: 'Times New Roman', Times, serif;
 }
