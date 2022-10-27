@@ -24,11 +24,11 @@
   /* position: absolute; */
 }
 .logo {
-  font-size: 45px;
-  color: white;
-  position: fixed;
-  /* padding-top: 15px;
-    padding-left: 15px; */
+  height: 70%;
+  width: 70%;
+  rotate: 180deg;
+  margin-top: 15%;
+  margin-left: 5%;
 }
 .toggle-btn {
   z-index: 1;
