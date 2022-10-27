@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import "../styles/nav.css";
+import "../styles/nav.css";
 
 function Nav({ gotoHome, gotoAbout, gotoSkill, gotoProject }) {
   const [show, setShow] = useState(true);
@@ -14,11 +14,11 @@ function Nav({ gotoHome, gotoAbout, gotoSkill, gotoProject }) {
       false
     );
   });
-  if (ismobile) {
-    require("../styles/r_nav.css");
-  } else {
-    require("../styles/nav.css");
-  }
+  // if (ismobile) {
+  //   require("../styles/r_nav.css");
+  // } else {
+  //   require("../styles/nav.css");
+  // }
 
   return (
     <>
