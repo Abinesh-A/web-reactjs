@@ -130,25 +130,6 @@ a:hover .menu-name{
 .mail:hover {
   color: red;
 }
-.navbar{
-  /* height: 65px; */
-  border-radius: 10px;
-  /* display: flex; */
-  justify-content: space-around;
-  background: rgba(0, 0, 0, 0.26);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  position: fixed;
-}
-.r_logo{
-  font-size: 45px;
-  padding-top: 1px;
-  padding-left: 15px;
-}
-.r_toggle-btn{
-
-}
 @media screen and (max-width: 730px){
   .sidebar {
     display: none;

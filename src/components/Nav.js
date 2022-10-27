@@ -59,6 +59,8 @@ function Nav({ gotoHome, gotoAbout, gotoSkill, gotoProject }) {
         <div className="contact">
           <div>
             <a
+              target="_blank"
+              rel="noreferrer"
               className="menu-icon2 lin"
               href="https://www.linkedin.com/in/mr-abi-3aa684183"
             >
@@ -68,6 +70,8 @@ function Nav({ gotoHome, gotoAbout, gotoSkill, gotoProject }) {
           </div>
           <div>
             <a
+              target="_blank"
+              rel="noreferrer"
               className="menu-icon2 insta"
               href="https://instagram.com/mr_abinesh_?utm_medium=copy_link"
             >
@@ -76,7 +80,10 @@ function Nav({ gotoHome, gotoAbout, gotoSkill, gotoProject }) {
             </a>
           </div>
           <div>
-            <a href="/#" className="menu-icon2 js-textareacopybtn mail">
+            <a
+              href="mailto:+codingdreams.1@gmail.com"
+              className="menu-icon2 js-textareacopybtn mail"
+            >
               <i className="bx bx-mail-send"></i>
               <span className="menu-name">Email</span>
             </a>
