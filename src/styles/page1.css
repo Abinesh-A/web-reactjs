@@ -3,6 +3,13 @@
   justify-content: space-between;
   align-items: center;
   min-height: 90vh;
+  /* margin-bottom: -2%; */
+}
+.btext{
+  min-height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 .center {
   /* min-height: 100vh; */
@@ -44,6 +51,7 @@
   /* top: 41.2%; */
   font-size: 25px;
   color: black;
+  white-space: nowrap;
 }
 .toptext {
   color: blue;
@@ -61,6 +69,48 @@ hr {
   width: 400px;
 } */
 
+.three{
+  width: 30%;
+}
+.three h1 {
+  /* font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  padding-bottom: 15px;
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  color: #111; */
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 35px;
+  /* line-height: 1.5em; */
+  padding-bottom: 5px;
+  color: #080808;
+}
+.three h1:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 5px;
+  width: 55px;
+  background-color: #111;
+}
+.three h1:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 2px;
+  height: 1px;
+  width: 95%;
+  max-width: 355px;
+  background-color: #333;
+}
+
 @media screen and (max-width: 730px) {
   .text {
     position: static;
@@ -72,6 +122,12 @@ hr {
     margin-left: 0;
   }
   .page1div {
-    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .toptext {
+    margin-right: 0;
+  }
+  .bottomtext {
+    margin-right: 0;
   }
 }

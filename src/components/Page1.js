@@ -27,8 +27,10 @@ export const Page1 = ({ home }) => {
           <img className="imgs" alt="img" src={test}></img>
         </div>
       </div>
-      <div>
-        <h1>ABOUT ME</h1>
+      <div className="btext">
+        <div class="three">
+          <h1>About Me</h1>
+        </div>
       </div>
     </>
   );

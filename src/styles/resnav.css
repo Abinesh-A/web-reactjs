@@ -1,0 +1,23 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  background: black;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.rlogo {
+  height: 80%;
+  width: 80%;
+  rotate: 180deg;
+}
+.rmenu{
+  display: flex;
+  justify-content: space-around;
+}
+.rmenu-icon{
+  width: 50px;
+  transition: all 0.4s ease;
+  font-size: 25px;
+  font-weight: 400;
+  color: white;
+}

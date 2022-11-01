@@ -1,10 +1,11 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./App.css";
 import Nav from "./components/Nav";
 import { Page1 } from "./components/Page1";
 import { Page2 } from "./components/Page2";
 import { Page3 } from "./components/Page3";
 import { Page4 } from "./components/Page4";
+import ResNav from "./components/ResNav";
 
 function App() {
   const home = useRef(null);
@@ -31,16 +32,40 @@ function App() {
       top: project.current.scrollIntoView({ behavior: "smooth" }),
     });
   };
+  const [ismobile, setIsmobile] = useState(window.innerWidth < 730);
+  useEffect(() => {
+    window.addEventListener(
+      "resize",
+      () => {
+        const current_width = window.innerWidth < 730;
+        if (current_width !== ismobile) setIsmobile(current_width);
+      },
+      false
+    );
+  });
+  // if (ismobile) {
+  //   require("../styles/r_nav.css");
+  // } else {
+  //   require("../styles/nav.css");
+  // }
   return (
     <div className="App">
-      {/* <header className="header"> */}
       <div className="navdiv">
-        <Nav
-          gotoHome={gotoHome}
-          gotoAbout={gotoAbout}
-          gotoSkill={gotoSkill}
-          gotoProject={gotoProject}
-        />
+        {ismobile ? (
+          <ResNav
+            otoHome={gotoHome}
+            gotoAbout={gotoAbout}
+            gotoSkill={gotoSkill}
+            gotoProject={gotoProject}
+          />
+        ) : (
+          <Nav
+            gotoHome={gotoHome}
+            gotoAbout={gotoAbout}
+            gotoSkill={gotoSkill}
+            gotoProject={gotoProject}
+          />
+        )}
       </div>
       <div className="contentdiv">
         <div className="d-flex flex-column">
@@ -50,8 +75,6 @@ function App() {
           <Page4 project={project} />
         </div>
       </div>
-      {/* <div className="d-flex flex-column bg-primary">hay</div> */}
-      {/* </header> */}
     </div>
   );
 }
