@@ -3,7 +3,7 @@
   min-height: 100vh;
   color: white;
   background-color: gainsboro;
-  display: flex;
+  /* display: flex; */
   scroll-behavior: smooth;
   user-select: none;
 }
