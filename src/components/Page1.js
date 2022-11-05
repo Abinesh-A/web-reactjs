@@ -31,6 +31,11 @@ export const Page1 = ({ home }) => {
         <div class="three">
           <h1>About Me</h1>
         </div>
+        <div class="contain">
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+        </div>
       </div>
     </>
   );
